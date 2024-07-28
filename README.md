@@ -1,5 +1,5 @@
 # FlexNextBike-research
-Research About Flexnest Fitness Bike. 
+WIP Research About Flexnest Fitness Bike. This is not affliated to FLexnest brand. Proceed with your own caution.
 
 I have created this repo to share details about Flexnest bike, a fitness brand based in India. They have  3 variants as of now: Lite, Standard, Premium. I have the Standard version where you can  connect to their app on iOS / Android.
 
@@ -16,11 +16,35 @@ Site: https://www.theflexnest.com/products/the-flexbike?variant=40096907329699
 
 ## Hidden Features
 
-* The Bike runs on Bluetooth FTMS Protocol. So it can connect to any BLE-FTMS compatible app.
+* The Bike runs on a single link Bluetooth Fitness Machine Service (FTMS) Protocol. So it can connect to any BLE-FTMS compatible app. However, cannot connect to Apple Watch since the FTMS protocol is unsupported. Unless Apple comes up with an update to work with FTMS machines which is unlikely since it competes with their gymkit system.
+* The Motherboard Firmware is based on a Yesoul Magnetic resistance Spin bike.
+* Requires a CR2477N 3V Battery (this is very ineffective for the long run in my opinion). With No physical switch to turn on the machine, it will drain quickly within a couple of months.
+
+## Work arounds for Apple Watch
+
+QDomyos Zwift - https://github.com/cagnulein/qdomyos-zwift
+
+   Initially, developed as a bridge to connect proprietory Exercise Bikes to Zwift. It now supports FTMS protocol too. The Developer @cagnulein is very kind and responds very quicky.
+
+   The Bridge reads your power and cadence value and sends the via a Bluetooth Cycle Power Service (CPS) server to Apple Watch.
+
+   Visualisation:
+
+   Flexnest Bike    ----BLE FTMS---->    QDomyos-Zwift    -----BLE CPS---->   watchos 10
+
+
+
+## To Do 
+
+* Alternate battery mod
+* Data Dump of BLE service
+* Integrate Speed and Distance Natively to watchOS 10 Workouts app
+
+
 
 ## Notable projects
 
 * https://github.com/ptx2/gymnasticon
-* https://github.com/cagnulein/qdomyos-zwift
+* https://github.com/cagnulein/qdomyos-zwift - Virtual Bridge to connect the machine to many services at once
 * https://github.com/dbsqp/bluetooth-reebok-57e
 * https://github.com/BigJinge/Multi-BLE-Sensor
