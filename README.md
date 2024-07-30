@@ -14,6 +14,29 @@ I have created this repo to share details about Flexnest bike, a fitness brand b
 
 Site: https://www.theflexnest.com/products/the-flexbike?variant=40096907329699
 
+## Technical Specifications
+
+Net Weight - 31Kg
+
+Gross Weight - 36Kg
+
+Floor Space - 1000 x 510 x1165mm
+
+Carton Size - L1005 x W260 x H945mm
+
+Flywheel Weight - 16.5lb
+
+Max User Weight - 120Kg
+
+Max User Height - 6ft 4in
+
+Max Tablet Size - 11"
+
+Min iOS Version -  iOS 13.4
+
+Min Android Version - Android 10
+
+
 ## Hidden Features
 
 * The Bike runs on a single link Bluetooth Fitness Machine Service (FTMS) Protocol. So it can connect to any BLE-FTMS compatible app. However, cannot connect to Apple Watch since the FTMS protocol is unsupported. Unless Apple comes up with an update to work with FTMS machines which is unlikely since it competes with their gymkit system.
